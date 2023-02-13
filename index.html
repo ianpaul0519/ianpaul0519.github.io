@@ -1,0 +1,99 @@
+<html>
+<head>
+  <style>
+    .container {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .message {
+      display: none;
+      padding: 20px;
+      background-color: white;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .message p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .btn {
+      padding: 20px 40px;
+      background-color: #f44336;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    .message-1 {
+      color: #f44336;
+    }
+
+    .message-2 {
+      color: #4caf50;
+    }
+
+    .message-3 {
+      color: #3f51b5;
+    }
+
+    .message-4 {
+      color: #ff5722;
+    }
+
+    .message-5 {
+      color: #9c27b0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Valentine's Day!</h1>
+    <p>Click the button to see a message:</p>
+    <button class="toggleBtn"> Show Message </button>
+    <div class="message message-1">
+      <p>
+        Love is a beautiful and powerful thing, and it comes in many forms. 
+      </p>
+    </div>
+    <div class="message message-2">
+      <p>
+        Whether you're single or in a relationship, cherish the love in your life. 
+      </p>
+    </div>
+    <div class="message message-3">
+      <p>
+        Love yourself, love your family, love your friends, and never stop searching for love in all its forms.
+      </p>
+    </div>
+    <div class="message message-4">
+      <p>
+        You are deserving of love and happiness, and it's never too late to find it. 
+      </p>
+    </div>
+    <div class="message message-5">
+      <p>
+        Happy Valentine's Day! Spread love and positivity to everyone you meet today and always.
+      </p>
+    </div>
+  </div>
+  <script>
+    const toggleBtn = document.querySelector(".toggleBtn");
+    const messages = document.querySelectorAll(".message");
+
+    let currentMessage = 0;
+    messages[currentMessage].style.display = "block";
+
+    toggleBtn.addEventListener("click", function() {
+      messages[currentMessage].style.display = "none";
+      currentMessage = (currentMessage + 1) % messages.length;
+      messages[currentMessage].style.display = "block";
+    });
+  </script>
+</body>
+</html>
