@@ -1,32 +1,29 @@
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-   body{
-    background-color: #FF0000;
-     height: 100vh;
-     display: flex;
-     align-itmes: center;
-     justify-content: center;
-    }
-    .container { 
+    body {
+        background-image: url('https://media.giphy.com/media/xT0BKwXLxfbORDo0Rq/giphy.gif');
+        background-size: cover;
+      }
+   }
+      .container {
+      background-color: #ffb6c1;
       padding: 20px;
       text-align: center;
-      width: 50%; /*Make the message box bigger */
     }
 
     .message {
       display: none;
       padding: 20px;
-      background-color: white;
+      background: ;
       margin-top: 20px;
       text-align: center;
-      font-size 20px 0;
+      font-size: 35px;
     }
 
     .message p {
-      font-size: 36px;
-      margin: 20px 0;
+      margin: 10px 0;
+      color: black;
     }
 
     .btn {
@@ -36,35 +33,15 @@
       border-radius: 5px;
       text-decoration: none;
       margin: 10px;
-      font-size: 24px;
+      font-size: 18px;
     }
-
-    .message-1 {
-      color: #f44336;
-    }
-
-    .message-2 {
-      color: #4caf50;
-    }
-
-    .message-3 {
-      color: #3f51b5;
-    }
-
-    .message-4 {
-      color: #ff5722;
-    }
-
-    .message-5 {
-      color: #9c27b0;
-    }
- </style>
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1 style="font-size: 45px;">Happy Valentine's Day!</h1>
-    <p style="font-size: px30;">Click the button to see a message:</p>
-    <button class="toggleBtn" style="font-size: 26px;"> Show Message </button>
+    <h1>10-Sensitivity</h1>
+    <p>Click the button:</p>
+    <button class="toggleBtn"> Show Message </button>
     <div class="message message-1">
       <p>
         Love is a beautiful and powerful thing, and it comes in many forms. 
@@ -86,16 +63,17 @@
       </p>
     </div>
     <div class="message message-5">
+      <img class=
       <p>
         Happy Valentine's Day! Spread love and positivity to everyone you meet today and always.
       </p>
     </div>
   </div>
   <script>
-   const toggleBtn = document.querySelector(".toggleBtn");
-   const messages = document.querySelectorAll(".message");
+    const toggleBtn = document.querySelector(".toggleBtn");
+    const messages = document.querySelectorAll(".message");
 
-     let currentMessage = 0;
+    let currentMessage = 0;
     messages[currentMessage].style.display = "block";
 
     toggleBtn.addEventListener("click", function() {
@@ -105,5 +83,3 @@
     });
   </script>
 </body>
-</html>
-    
